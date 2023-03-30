@@ -1,3 +1,6 @@
+::Made by Maxwell Fisher - @Maxwellcrafter
+::This script waits until a USB device is plugged in and/or removed, and then prints info about that device
+
 @pnputil /enum-devices /connected /class USB > "%tmp%\usbtmp1"
 :checkLoop
 @ping 127.1 -n 2 > nul
